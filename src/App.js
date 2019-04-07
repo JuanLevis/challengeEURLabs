@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
 import './App.css';
 import InvestorPage from './pages/InvestorPage';
 import Navbar from 'react-bootstrap/Navbar';
