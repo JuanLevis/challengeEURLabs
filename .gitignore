@@ -351,4 +351,8 @@ ASALocalRun/
 
 npm-debug.log*
 yarn-debug.log*
+<<<<<<< HEAD
 yarn-error.log*
+=======
+yarn-error.log*
+>>>>>>> 6dac13802e7ae098b93fa1b9ee6cdb50364032f5
