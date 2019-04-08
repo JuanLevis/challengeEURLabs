@@ -9,21 +9,21 @@ const StockCard = ({companyData}) => (
         <Card.Body>
             <Card.Title>Cotizacion actual</Card.Title>
             <Card.Text>
-                <ul>
                     <li>Open: {companyData.open}</li>
                     <li>High: {companyData.high}</li>
                     <li>Low: {companyData.low}</li>
                     <li>Close: {companyData.close}</li>
-                </ul>
             </Card.Text>
-            <Card.Footer>Diferencia: 
+            <Card.Footer>Diferencia al dia anterior: <br />
                 <NumberFormat 
                 value={companyData.difference}
                 displayType={'text'}
                 decimalSeparator={','}
                 prefix={'USD '}
                 decimalScale={2}
+                allowNegative={false}
             />
+            &nbsp;
             (<NumberFormat
                 className={companyData.difference < 0 ? 'negative' : 'positive'} 
                 value={(companyData.difference * 100) / companyData.open}
